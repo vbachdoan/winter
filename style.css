@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.snow{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(2px);
+    z-index: 100;
+}
+body .snow:nth-child(1){
+    left: 50px;
+    bottom: 100%;
+    animation: trans1 5s linear infinite;
+}
+@keyframes trans1 {
+    0%{
+        opacity: 1;
+        bottom: 100%;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+body .snow:nth-child(2){
+    left: 150px;
+    bottom: 100%;
+    animation: trans2 4s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes trans2 {
+    0%{
+        opacity: 1;
+        bottom: 100%;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+body .snow:nth-child(3){
+    left: 270px;
+    bottom: 100%;
+    animation: trans3 5.7s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes trans3 {
+    0%{
+        opacity: 1;
+        bottom: 100%;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+body .snow:nth-child(4){
+    left: 400px;
+    bottom: 100%;
+    animation: trans4 5.7s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes trans4 {
+    0%{
+        opacity: 1;
+        bottom: 100%;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+body .snow:nth-child(4){
+    left: 500px;
+    bottom: 100%;
+    animation: trans4 3.2s linear infinite;
+    animation-delay: 0.55s;
+}
+@keyframes trans4 {
+    0%{
+        opacity: 1;
+        bottom: 100%;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+body .snow:nth-child(5){
+    left: 590px;
+    bottom: 100%;
+    animation: trans5 3.2s linear infinite;
+    animation-delay: 0.85s;
+}
+@keyframes trans5 {
+    0%{
+        opacity: 1;
+        bottom: 100%;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 0;
+    }
+}
+.wrap-pine{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pine-part{
+    position: absolute;
+    width: 250px;
+    height: 140px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.wrap-pine .pine-part:nth-child(1){
+    transform: scale(0.75);
+    background-color: green;
+    z-index: 4;
+    top: 0px
+}
+.wrap-pine .pine-part:nth-child(2){
+    transform: scale(1);
+    background-color: green;
+    z-index: 3;
+    top: 50px
+}
+.wrap-pine .pine-part:nth-child(3){
+    transform: scale(1.25);
+    background-color: green;
+    z-index: 3;
+    top: 100px
+}
+.wrap-pine .base{
+    width: 30px;
+    height: 80px;
+    background-color: brown;
+    bottom: 0px;
+    position: absolute;
+}
+#pine2{
+    position: absolute;
+    left: 150px;
+    transform: scale(0.5);
+}
+#pine3{
+    position: absolute;
+    left: 300px;
+    transform: scale(0.4);
+}
